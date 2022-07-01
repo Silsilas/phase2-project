@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+
+.listings-container {
+  width: 100vw;
+}
+
+.car-listings {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.car-listings-container {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+
+.car-listing-item {
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  border: 1px solid lightgrey;
+}
+
+.car-listings-image {
+  position: relative;
+}
+.car-listings-image button{
+  border: 0;
+  width: 100%;
+}
+.close{
+  border: none;
+  background-color: transparent;
+}
+.modal-image img{
+  width: 300px;
+}
+.car-body{
+  display: flex;
+  height: 100%;
+}
+
+.modal-image {
+  flex: 1;
+}
+.modal-image img{
+  width: 90%;
+  height: 100%;
+
+}
+
+.car-details {
+  flex: 1;
+  line-height: 2.0;
+}
+.car-details button{
+  padding: 5px 30px;
+  margin-top: 30px;
+}
+@media (max-width:600px){
+  .car-body{
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.modal-dialog{
+  height: 70vh;
+  
+}
+
+.car-listings-image span {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+.car-listings-image img {
+  width: 100%;
+  height: 220px;
+}
+
+.car-listing-description {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.car-listings-inner-description {
+  line-height: 1.6;
+}
+
+.car-listing-description button {
+  padding: 5px 30px;
+}
+
+.listings-heading{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  
+}
+.listings-heading hr{
+  width: 300px;
+  
+}
+.listings-heading h4{
+  margin: 0 30px;
+  text-align: center;
+}
